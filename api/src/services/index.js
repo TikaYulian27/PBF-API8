@@ -1,7 +1,7 @@
 import React from 'react';
-import getAPI from '../../Get';
-import PostAPI from '../../Post';
-import DeleteAPI from '../../Delete';
+import getAPI from './Get';
+import PostAPI from './Post';
+import DeleteAPI from './Delete';
 
 const getNewsBlog = () => getAPI("posts?_sort=id&_order=asc")
 const postNewsBlog = (dataYangDikirim) => PostAPI("posts", dataYangDikirim)
@@ -14,3 +14,7 @@ const API = {
 }
 
 export default API;
+
+
+
+
